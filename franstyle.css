@@ -60,12 +60,18 @@ body {
   background-repeat: repeat-x,repeat-x,repeat-y;
   background-color: rgba(210,210,210,1);
   background-position: top, bottom;
+  height: 100%;
 }
 
 #file {
   width: 960px;
-  margin: 15px auto;
+/*  margin: 15px auto; */
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
   text-align: left;
+  min-height: 100%;
 }
 
 #header {
@@ -166,8 +172,10 @@ body {
 #footnote {
   clear: both;
   text-align: center;
-  padding: 5px;
+  padding: 5px 5px -50px 5px;
+  box-shadow: 0 50vh 0 50vh #000;
 /*  border-top: 2px solid rgb(197,0,0); */
+/*  border-top: 2px solid rgba(210,210,210,1); */
   color: #999999
 }
 
