@@ -76,7 +76,8 @@ body {
 }
 
 #navigation {
-/*  width: 100%; */
+  width: 100%;
+  width: 960px;
 /*  background: #CCCCCC; */
   padding-top: 7px;
 }
@@ -97,7 +98,7 @@ body {
 }
 
 #navigation li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -111,6 +112,28 @@ body {
 #navigation .active {
   background-color: rgba(210,210,210,1);
   color: rgb(0,0,0);
+}
+
+#navigation .social{
+  display: block;
+  float: right;
+  padding: 0;
+  border: 0;
+}
+
+#navigation .social img{
+  padding: 0;
+  border: 0;
+}
+
+#navigation .social a{
+  display: inline-block;
+  padding: 2.5px 3px 0px 0px;
+  border: 0;
+}
+
+#navigation .social a:hover{
+  padding: 2px 5px 0px 0px;
 }
 
 #section {
@@ -144,7 +167,7 @@ body {
   clear: both;
   text-align: center;
   padding: 5px;
-  border-top: 2px solid rgb(197,0,0);
+/*  border-top: 2px solid rgb(197,0,0); */
   color: #999999
 }
 
