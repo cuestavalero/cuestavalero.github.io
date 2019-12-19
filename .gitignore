@@ -1,0 +1,25 @@
+#
+#######################################################################
+# gitignore file for the project T0_Database
+#######################################################################
+
+
+# OS generated files     #
+##########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.Rhistory
+
+# Folders                #
+##########################
+images/**
+
+
+# Files                  #
+##########################
+*.pdf

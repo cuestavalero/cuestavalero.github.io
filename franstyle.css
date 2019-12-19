@@ -39,11 +39,11 @@ a:active {
 }
 
 h1 {
-  font: bold 35px verdana, sans-serif;
+  font: bold 33px verdana, sans-serif;
 }
 
 h2 {
-  font: bold 25px verdana, sans-serif;
+  font: bold 23px verdana, sans-serif;
 }
 
 h3 {
@@ -56,15 +56,18 @@ header, section, footer, aside, nav, article, figure, figcaption, hgroup {
 
 body { 
   text-align: center;
-  background-image: url("images/background.png"), url("images/background-bottom.png");
+/*  background-image: url("images/background.png"), url("images/background-bottom.png"); */
+  background-image: url("images/background.png");
   background-repeat: repeat-x,repeat-x,repeat-y;
   background-color: rgba(210,210,210,1);
+/*  background-position: top; */
   background-position: top, bottom;
   height: 100%;
 }
 
 #file {
-  width: 960px;
+/*  width: 960px; */
+  width: 800px;
 /*  margin: 15px auto; */
   margin-top: 15px;
   margin-right: auto;
@@ -83,7 +86,8 @@ body {
 
 #navigation {
   width: 100%;
-  width: 960px;
+  width: 800px;
+/*  width: 960px; */
 /*  background: #CCCCCC; */
   padding-top: 7px;
 }
@@ -144,7 +148,8 @@ body {
 
 #section {
   float: left;
-  width: 700px;
+  width: 600px;
+/*  width: 700px; */
   height: auto;
   margin-top: 30px;
   margin-right: 20px;
@@ -152,7 +157,8 @@ body {
 
 #section_other {
   float: left;
-  width: 960px;
+  width: 800px;
+/*  width: 960px; */
   height: auto;
   margin-top: 30px;
   margin-right: 20px;
@@ -162,7 +168,8 @@ body {
 #column-right {
   float: left;
   text-align: center;
-  width: 240px;
+  width: 180px;
+/*  width: 240px; */
   height: auto;
   margin-top: 30px;
   padding: 0px;
@@ -172,9 +179,10 @@ body {
 #footnote {
   clear: both;
   text-align: center;
-  padding: 5px 5px -50px 5px;
-  box-shadow: 0 50vh 0 50vh #000;
-/*  border-top: 2px solid rgb(197,0,0); */
+  padding: 5px 5px 5px 5px;
+/*  box-shadow: 0 50vh 0 50vh #000; */
+  border-top: 4px solid rgba(197,0,0,1);
+  background: rgba(0,0,0,1);
 /*  border-top: 2px solid rgba(210,210,210,1); */
   color: #999999
 }
