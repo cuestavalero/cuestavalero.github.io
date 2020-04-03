@@ -1,6 +1,10 @@
 #
 #######################################################################
-# gitignore file for the project T0_Database
+# gitignore file for the webpage
+#
+# 1 - git add .
+# 2 - git commit -v
+# 3 - git push -u origin master
 #######################################################################
 
 
