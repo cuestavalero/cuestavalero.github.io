@@ -21,34 +21,28 @@
   </head>
   
   <body>
-    <div id="file">
-      <header id="header">
-<!--        <hgroup>
-          <h1> El t&iacute;tulo de la p&aacute;gina </h1>
-          <h2> El subt&iacute;tulo </h2>
-        </hgroup>
--->
-        <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
-      </header>
+    <div class="header">
+      <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
+    </div>
 
-      <nav id="navigation">
-        <ul>
-          <li> <a target="_self" href="index.html"> Home </a> </li>
-          <li> <a target="_self" href="background.html"> Background </a> </li>
-          <li> <a target="_self" href="research.html"> Research </a> </li>
-          <li> <a target="_self" href="publications.html"> Publications </a> </li>
-          <li> <a target="_self" class="active" href="conferences.html"> Conferences </a> </li>
-          <li class="social"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </li>
-        </ul>
-      </nav>      
+    <div style="overflow:auto">
 
-      <section id="section_other"> 
+      <div class="menu">
+        <div class="menuitem"> <a target="_self" class="navi" href="index.html"> Home </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="background.html"> Background </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="research.html"> Research </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="publications.html"> Publications </a> </div>
+        <div class="menuitem nav_active"> <a target="_self" class="nav_active" href="conferences.html"> Conferences </a> </div>         
+        <div class="menuitem"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </div>
+      </div>       
+
+      <div class="main"> 
         <article>
           <h2> Conference Presentations (Oral and Poster) </h2>
 	  <h4>(&#9826; denotes B.Sc. student)</h4> 
           <ul style="list-style-type:none">
             <li><p><b>2020</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H., Gonz&aacute;lez-Rouco J.F., Garc&iacute;a-Bustamante E., and Finnis J. (2020). Land Surface Model influence on the simulated climatologies of extreme temperature and precipitation events within the WRF model over North America. Canadian Meteorological and Oceanographic Society' 54th Congress, 24-28 May, Ottawa, O.N. (Canada). <em>Cancelled</em>.</p></li>
 
               <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H., Gonz&aacute;lez-Rouco J.F. and Garc&iacute;a-Bustamante E. (2020). Long-Term Global Ground Heat Flux and Continental Heat Storage from Geothermal Data During the Last Four Centuries. Canadian Meteorological and Oceanographic Society' 54th Congress, 24-28 May, Ottawa, O.N. (Canada). <em>Cancelled</em>.</p></li>
@@ -63,12 +57,12 @@
         <article>
           <ul style="list-style-type:none">
             <li><p><b>2019</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p>Gentine P., Seneviratne S.I., Beltrami H., Davin E., Meier R., Garc&iacute;a-Garc&iacute;a A. and <strong>Cuesta-Valero F.J.</strong> (2019). Large recent continental heat storage. Abstract GC51J-1078. 2019 AGU Fall Meeting, 9-13 December, San Francisco, C.A. (USA).</p></li>
 
               <li><p>von Schuckmann K., Adusumilli S., Beltrami H., Boyer T., Cheng L., <strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Gentine P., Ghent D., Haimberger L., Hollmann R., Kirchengast G., Mayer M., Marzeion B., Palmer M., Seneviratne S.,  Slater D., Steiner S., Storto S., Straneo F., Tassone C., Timmermanns M.L. (2019). Global observations for Earth's Energy Imbalance: Where does the energy go? Global Climate Observing System Session at WMO/IPCC pavilion on December 3rd, UN Climate Change Conference COP25. 2-13 December 2019, Madrid (Spain).</p></li>
 
-              <li><p>von Schuckmann K., Beltrami H., Boyer T., Cheng L., <strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A.,  Gentine P., Ghent. D., Haimberger L., Hollmann R., Kirchengast G., Mayer M., Palmer M., Seneviratne S., Sheperd A., Steiner A., Storto A., Straneo F., and Tassone K. (2019). <a href="https://unfccc.int/topics/science/events-meetings/systematic-observation/earth-information-day-2019">Heat stored in the Earth system: Where does the energy go?</a> Poster for the Earth Information Day 2019, UN Climate Change Conference COP25. 2-13 December 2019, Madrid (Spain).</p></li>
+              <li><p>von Schuckmann K., Beltrami H., Boyer T., Cheng L., <strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A.,  Gentine P., Ghent. D., Haimberger L., Hollmann R., Kirchengast G., Mayer M., Palmer M., Seneviratne S., Sheperd A., Steiner A., Storto A., Straneo F., and Tassone K. (2019). <a class="hip" href="https://unfccc.int/topics/science/events-meetings/systematic-observation/earth-information-day-2019">Heat stored in the Earth system: Where does the energy go?</a> Poster for the Earth Information Day 2019, UN Climate Change Conference COP25. 2-13 December 2019, Madrid (Spain).</p></li>
 
               <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H. Finnis J., Gonz&aacute;lez-Rouco J.F. and Garc&iacute;a-Bustamante E. (2019). Land Surface Model Contribution to the Simulated Spread of Land-Atmosphere Interactions and Extreme Events within the WRF Model over North America. IUGG19-3599. 27th IUGG General Assembly, 8-18 July, Montreal, Q.C. (Canada).</p></li>
 
@@ -86,7 +80,7 @@
         <article>
           <ul style="list-style-type:none">
             <li><p><b>2018</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H., and Finnis J. (2018). Assessment of the Earth's Energy Budget within the CMIP5 Ensemble: Preliminary Results. WCRP workshop: The Earth's Energy Imbalance and its implications (EEI), 12-15 November, Toulouse (France).</p></li>
 
               <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H. and Finish J. (2018). Simulated air-ground temperature coupling and extreme events: the role of the Land Surface Model. Abstract ID:9857. Canadian Meteorological and Oceanographic Society's 52nd Congress, 10-14 June, Halifax, N.S. (Canada).</p></li>
@@ -107,7 +101,7 @@
         <article>
           <ul style="list-style-type:none">
             <li><p><b>2017</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H. and Smerdon J.E. (2017). Characterization of Air and Ground Temperature Relationships within the CMIP5 Historical and Future Climate Simulations. Abstract H33B-1678. 2017 AGU Fall Meeting, 11-15 December, New Orleans, L.A. (USA).</p></li>
 
               <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H. and Zorita E. (2017). Long-term Surface Temperature (LoST) Database as a Complement for GCM Preindustrial Simulations. Abstract PP13C-1099. 2017 AGU Fall Meeting, 11-15 December, New Orleans, L.A. (USA).</p></li>
@@ -138,7 +132,7 @@
         <article>
           <ul style="list-style-type:none">
             <li><p><b>2016</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p>Beltrami H., Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong> and  Smerdon J.E. (2016). Simulation of Air and Ground Temperatures in PMIP3/CMIP5 Last Millennium Simulations: Implications for Climate Reconstructions from Borehole Temperature Profiles. Geophysical Research Abstracts Vol. 18, EGU2016-4988, 2016. EGU General Assembly 2016, 17-22 April, Vienna (Austria).</p></li>
 
               <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H. and  Smerdon J.E. (2016). Estimating Continental Energy Storage from CMIP5 Simulations. Geophysical Research Abstracts Vol. 18, EGU2016-4975, 2016. EGU General Assembly 2016, 17-22 April, Vienna (Austria).</p></li>
@@ -151,7 +145,7 @@
         <article>
           <ul style="list-style-type:none">
             <li><p><b>2015</b></p></li>
-            <ul id="list">
+            <ul class="lista">
               <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami, H. and Smerdon J.E. (2015). First Estimates of Continental Energy Storage from CMIP5 Simulations. AGU-35469. AGU Joint Assembly, 2-7 May, Montr&eacute;al, Q.C. (Canada).</p></li>
 
               <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H. and Smerdon J.E. (2015). Air and Ground Temperature Coupling in the CMIP5 Model Simulations. AGU-35389 AGU Joint Assembly, 2-7 May, Montr&eacute;al, Q.C. (Canada).</p></li>
@@ -159,15 +153,15 @@
           </ul>
         </article>
 
-      </section>
+      </div>
 
-      <footer id="footnote">
+      <div class="footnote">
         <p> This website has been edited with <a href="http://www.vim.org"> <img src="images/vim.png" alt="Vim" align="top" style=float:center;width:30px;height:auto /></a> and <a href="http://www.gimp.org"><img src="images/gimp.png" alt="Gimp" align="top" style=float:center;width:40px;height:auto /></a> </p>
         <p> Last modification: September, 2020 </p>
 
         <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Francisco Jos&eacute; Cuesta Valero</span> is licensed under a <a style="color:rgba(210,210,210,1)" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-      </footer>
-    <div>
+      </div>
+
   </body>
 
 </html>

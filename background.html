@@ -21,34 +21,28 @@
   </head>
   
   <body>
-    <div id="file">
-      <header id="header">
-<!--        <hgroup>
-          <h1> El t&iacute;tulo de la p&aacute;gina </h1>
-          <h2> El subt&iacute;tulo </h2>
-        </hgroup>
--->
-        <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
-      </header>
+    <div class="header">
+      <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
+    </div>
 
-      <nav id="navigation">
-        <ul>
-          <li> <a target="_self" href="index.html"> Home </a> </li>
-          <li> <a target="_self" class="active" href="background.html"> Background </a> </li>
-          <li> <a target="_self" href="research.html"> Research </a> </li>
-          <li> <a target="_self" href="publications.html"> Publications </a> </li>
-          <li> <a target="_self" href="conferences.html"> Conferences </a> </li>
-          <li class="social"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </li>
-        </ul>
-      </nav>      
+    <div style="overflow:auto">
 
-      <section id="section_other"> 
+      <div class="menu">
+        <div class="menuitem"> <a target="_self" class="navi" href="index.html"> Home </a> </div>
+        <div class="menuitem nav_active"> <a target="_self" class="nav_active" href="background.html"> Background </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="research.html"> Research </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="publications.html"> Publications </a> </div>
+        <div class="menuitem"> <a target="_self" class="navi" href="conferences.html"> Conferences </a> </div>         
+        <div class="menuitem"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </div>
+      </div>     
+
+      <div class="main"> 
         <article>
           <h2>Education</h2>
-          <ul id="list">
-            <li> <p> Ph.D. degree in Environmental Sciences, Memorial University of Newfoundland (<a href="http://www.mun.ca/">MUN</a>), St. John's, Canada (2016-2020). </p></li>
-            <li> <p> M.Sc. degree in Earth Sciences, St. Francis Xavier University (<a href="http://www.stfx.ca/">StFX</a>), Antigonish, Canada (2014-2016). </p></li>
-            <li> <p> B.Sc. degree in Physics, University of Murcia (<a href="http://www.um.es/">UMU</a>), Murcia, Spain (2009-2013).</p></li>
+          <ul class="lista">
+            <li> <p> Ph.D. degree in Environmental Sciences, Memorial University of Newfoundland (<a class="hip" href="http://www.mun.ca/">MUN</a>), St. John's, Canada (2016-2020). </p></li>
+            <li> <p> M.Sc. degree in Earth Sciences, St. Francis Xavier University (<a class="hip" href="http://www.stfx.ca/">StFX</a>), Antigonish, Canada (2014-2016). </p></li>
+            <li> <p> B.Sc. degree in Physics, University of Murcia (<a class="hip" href="http://www.um.es/">UMU</a>), Murcia, Spain (2009-2013).</p></li>
           </ul>
         </article>
         
@@ -67,7 +61,7 @@
         <article>
           <h2> Research Interests </h2>
           
-          <ul id="list">
+          <ul class="lista">
             <li><p>Climate Change</p></li>
             <li><p>Earth's Energy Imbalance</p></li>
             <li><p>Earth's Heat Inventory</p></li>
@@ -78,15 +72,17 @@
             <li><p>Climate Change Impacts</p></li>
         </article>
 
-      </section>
+      </div>
 
-      <footer id="footnote">
-        <p> This website has been edited with <a href="http://www.vim.org"> <img src="images/vim.png" alt="Vim" align="top" style=float:center;width:30px;height:auto /></a> and <a href="http://www.gimp.org"><img src="images/gimp.png" alt="Gimp" align="top" style=float:center;width:40px;height:auto /></a> </p>
-        <p> Last modification: September, 2020 </p>
+    </div>
 
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Francisco Jos&eacute; Cuesta Valero</span> is licensed under a <a style="color:rgba(210,210,210,1)" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-      </footer>
-    <div>
+    <div class="footnote">
+      <p> This website has been edited with <a href="http://www.vim.org"> <img src="images/vim.png" alt="Vim" align="top" style=float:center;width:30px;height:auto /></a> and <a href="http://www.gimp.org"><img src="images/gimp.png" alt="Gimp" align="top" style=float:center;width:40px;height:auto /></a> </p>
+      <p> Last modification: September, 2020 </p>
+
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Francisco Jos&eacute; Cuesta Valero</span> is licensed under a <a style="color:rgba(210,210,210,1)" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+    </div>
+
   </body>
 
 </html>
