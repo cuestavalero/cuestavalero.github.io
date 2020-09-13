@@ -150,10 +150,11 @@ h3 {
   /* For tablets: */
   .index{
     width: 100%;
-    padding: 0;
+    padding: 0px;
   }
   .main {
     width: 100%;
+    padding: 0px;
   }
   .right {
     width: 100%;
@@ -161,11 +162,16 @@ h3 {
   .menu {
     width: 100%;
   }
+  .figure {
+    width: 100%;
+    padding: 0px;
+  }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right, .index {
+  .menu, .main, .right, .indexi, .figure {
     width: 100%;
+    padding: 0px;
   }
 }
 
