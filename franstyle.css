@@ -197,7 +197,6 @@ h3 {
 #content {
   width: 1000px;
   margin: auto;
-  align: center;
 }
 
 @media only screen and (max-width:900px) {
@@ -225,16 +224,20 @@ h3 {
   }
   #navigation {
     width: 100%;
-    font: bold 7px verdana, sans-serif;
+    font: bold 10px verdana, sans-serif;
   }
   #navigation li {
-    font: bold 7px verdana, sans-serif;
+    font: bold 10px verdana, sans-serif;
+  }
+  #navigation li a {
+    font: bold 10px verdana, sans-serif;
+    padding: 6px 8px;
   }
   #navigation .social img{
   padding: 0;
   border: 0;
-  width:30px;
-  height:30px;
+  width:20px;
+  height:20px;
   }
   #content {
     width:100%;
