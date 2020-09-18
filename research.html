@@ -21,20 +21,25 @@
   </head>
   
   <body>
+
+    <div id="content">
+
     <div class="header">
       <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
     </div>
 
     <div style="overflow:auto">
 
-      <div class="menu">
-        <div class="menuitem"> <a target="_self" class="navi" href="index.html"> Home </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="background.html"> Background </a> </div>
-        <div class="menuitem nav_active"> <a target="_self" class="nav_active" href="research.html"> Research </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="publications.html"> Publications </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="conferences.html"> Conferences </a> </div>         
-        <div class="menuitem"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </div>
-    </div>     
+      <div id="navigation">
+         <ul>
+            <li> <a target="_self" href="index.html">Home</a> </li>
+            <li> <a target="_self" href="background.html">Background</a> </li>
+            <li> <a target="_self" class="active" href="research.html">Research</a> </li>
+            <li> <a target="_self" href="publications.html">Publications</a> </li>
+            <li> <a target="_self" href="conferences.html">Conferences</a> </li>
+            <li class="social"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter"/></a> </li>
+          </ul>
+      </div> 
 
     <div class="main"> 
       <article>
@@ -92,6 +97,24 @@
         
       <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Francisco Jos&eacute; Cuesta Valero</span> is licensed under a <a style="color:rgba(210,210,210,1)" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
     </div>
+
+    </div>
+
+    <!-- Sticky navbar -->
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navigation = document.getElementById("navigation");
+      var sticky = navigation.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navigation.classList.add("sticky")
+        } else {
+          navigation.classList.remove("sticky");
+        }
+      }
+    </script>
 
   </body>
 

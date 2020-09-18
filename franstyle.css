@@ -6,21 +6,17 @@
 
 p {
   font: 16px verdana, sans-serif;
+  color: black;
 }
 
 #p2 {
   font: 14px verdana, sans-serif;
   line-height: 70%;
 }
-
  
 a:link {
   text-decoration: none;
-/*  color: black; */
-}
-
-.hip {
-  color: rgba(0,0,0,1);
+  color: black;
 }
 
 a:visited {
@@ -33,10 +29,16 @@ a:hover {
   color: red;
 }
 
-/*a:active {
+a:active {
   text-decoration: underline;
   color: red;
-}*/
+}
+
+ol li {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(204,0,0);
+}
 
 #mail {
   color: rgb(0,0,0);
@@ -58,12 +60,75 @@ h3 {
   font: bold 20px verdana, sans-serif;
 }
 
+#navigation {
+  width: 1000px;
+/*  background: #CCCCCC; */
+  padding-top: 7px;
+  overflow: hidden;
+}
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,1);
+  font: bold 14px verdana, sans-serif;
+}
+#navigation li {
+  float: left;
+  border-right: 1px solid #bbb;
+  font: bold 14px verdana, sans-serif;
+}
+#navigation li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#navigation li a:hover:not(.active) {
+  background-color: rgb(64,64,64);
+}
+#navigation .active {
+  background-color: rgba(114,114,114,1);
+  color: rgb(0,0,0);
+}
+#navigation .social{
+  display: block;
+  float: right;
+  padding: 0;
+  border: 0; 
+}
+#navigation .social img{
+  padding: 0;
+  border: 0;
+  width:40px;
+  height:40px;
+}
+#navigation .social a{
+  display: inline-block;
+  padding: 2.5px 3px 0px 0px;
+  border: 0;
+}
+#navigation .social a:hover{
+  padding: 2px 5px 0px 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .index {
+  padding-top: 60px;
+}
+
 .header {
+  display: flex;
   background-color: rgb(0,0,0);
   border: 8px solid rgb(204,0,0);
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .footnote {
@@ -96,31 +161,18 @@ h3 {
   font: italic 0.14px verdana, sans-serif;
 }
 
-.menu {
-  float: left;
-  width: 20%;
-}
-
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-  background-color: rgba(0,0,0,1);
-  font: bold 14px verdana, sans-serif;
-}
-
 .main {
   float: left;
-  width: 80%;
-  padding-left: 20px;
+  width: 1000px;
+  padding-left: 0;
   overflow: hidden;
   margin-top: 7px;
 }
 
 .index {
   float: left;
-  width: 65%;
-  padding: 0 20px;
+  width: 800px;
+  padding-right: 20px;
   overflow: hidden;
   margin-top: 7px;
 }
@@ -128,25 +180,19 @@ h3 {
 .right {
   background-color: rgba(255,255,255,1);
   float: left;
-  width: 15%;
+  width: 200px;
   padding: 10px 15px;
   margin-top: 7px;
   margin-bottom: 7px;
 }
 
-.nav_active {
-  background-color: rgba(255,255,255,1);
-  color: rgb(0,0,0);
+#content {
+  width: 1000px;
+  margin: auto;
+  align: center;
 }
 
-.navi {
-  background-color: rgba(0,0,0,1);
-  color: rgba(240,240,240,1);
-}
-
-
-
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:900px) {
   /* For tablets: */
   .index{
     width: 100%;
@@ -166,25 +212,37 @@ h3 {
     width: 100%;
     padding: 0px;
   }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right, .indexi, .figure {
+  .sticky {
     width: 100%;
-    padding: 0px;
+  }
+  #navigation {
+    width: 100%;
+    font: bold 7px verdana, sans-serif;
+  }
+  #navigation li {
+    font: bold 7px verdana, sans-serif;
+  }
+  #navigation .social img{
+  padding: 0;
+  border: 0;
+  width:30px;
+  height:30px;
+  }
+  #content {
+    width:100%;
   }
 }
 
-body { 
+body {
   text-align: center; 
 /*  background-image: url("images/background.png"), url("images/background-bottom.png"); */
 /*  background-image: url("images/background.png"); */
-/*  background-image: url("images/background.png"); */
   background-repeat: repeat-x,repeat-x,repeat-y;
-  background-color: rgba(210,210,210,1);
+  background-color: rgba(220,220,220,1);
 /*  background-position: top; */
   background-position: top, bottom;
   height: 100%;
+  margin: auto;
 }
 
 article {
@@ -196,6 +254,4 @@ article {
   text-align: justify;
   text-justify: inter-word;
 }
-
-
 

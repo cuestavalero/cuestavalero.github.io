@@ -21,20 +21,25 @@
   </head>
   
   <body>
+
+    <div id="content">
+
     <div class="header">
       <img src="images/earth.jpg" alt="Earth" style="float:center;width:100%;height:auto"/>
     </div>
 
     <div style="overflow:auto">
 
-      <div class="menu">
-        <div class="menuitem"> <a target="_self" class="navi" href="index.html"> Home </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="background.html"> Background </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="research.html"> Research </a> </div>
-        <div class="menuitem nav_active"> <a target="_self" class="nav_active" href="publications.html"> Publications </a> </div>
-        <div class="menuitem"> <a target="_self" class="navi" href="conferences.html"> Conferences </a> </div>         
-        <div class="menuitem"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter" style="width:40px;height:40px;padding:0;border:0;"/></a> </div>
-      </div>       
+      <div id="navigation">
+        <ul>
+           <li> <a target="_self" href="index.html">Home</a> </li>
+           <li> <a target="_self" href="background.html">Background</a> </li>
+           <li> <a target="_self" href="research.html">Research</a> </li>
+           <li> <a target="_self" class="active" href="publications.html">Publications</a> </li>
+           <li> <a target="_self" href="conferences.html">Conferences</a> </li>
+           <li class="social"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter"/></a> </li>
+         </ul>
+      </div>      
 
       <div class="main">
         <article>
@@ -57,8 +62,8 @@
         <article>
           <h2> Peer-Reviewed Publications </h2>
           
-          <ul class="lista">
-            <li><p>von Schuckmann, K., Cheng, L., Palmer, M.D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., <strong>Cuesta-Valero, F.J.</strong>, Desbruy&egrave;res, D., Domingues, C., Garc&iacute;a-Garc&iacute;a, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G.C., Killick, R., King, B.A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D.P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S.I., Shepherd, A., Slater, D.A., Steiner, A.K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E. (2020). <a class="hip" href="https://essd.copernicus.org/articles/12/2013/2020/">Heat stored in the Earth system: where does the energy go?</a> <em>Earth System Science Data</em>, 12, 2013-2041, doi:10.5194/essd-12-2013-2020. <br><br> <u>Outreach</u>: [<a class="hip" href="https://www.lefigaro.fr/sciences/l-accumulation-de-chaleur-sur-terre-s-accelere-a-un-rythme-inquietant-20200910">Le Figaro</a>], [<a class="hip" href="http://www.columbia.edu/~jeh1/mailings/2020/20200907_Sentinel.pdf">James Hansen</a>], [<a class="hip" href="https://marine.copernicus.eu/heat-stored-earth-system-energy-go/">Copernicus Marine Service</a>], [<a class="hip" href="https://news.uni-graz.at/en/detail/article/hitzestau/">University of Graz</a>],[<a class="hip" href="https://www.goosocean.org/index.php?option=com_content&view=article&id=250:heat-stored-in-the-earth-system-where-does-the-energy-go&catid=13&Itemid=247">The Global Ocean Observing System</a>], [<a class="hip" href="https://cleantechnica.com/2020/09/07/listen-up-dr-james-hansen-has-a-message-for-the-citizens-of-earth/">CleanTechnica</a>], [<a class="hip" href="https://www.wcrp-climate.org/news/science-highlights/1610-where-does-the-energy-go">Note of the WCRP</a>], [<a class="hip" href="https://public.wmo.int/en/media/news/where-does-heat-go">Note of the WMO</a>], [<a class="hip" href="https://www.preventionweb.net/news/view/73518">PreventionWeb</a>], [<a class="hip" href="https://idw-online.de/de/news753623">Informationsdienst Wissenschaft</a>],[<a class="hip" href="https://www.laborpraxis.vogel.de/die-welt-im-waermestau-a-962361/">LaborPraxis</a>], [<a class="hip" href="https://wissen.newzs.de/2020/09/07/hitzestau-forscherinnen-der-universitaet-graz-stellen-starke-globale-waermezunahme-in-der-atmosphaere-fest/">Wissen Newzs</a>], [<a class="hip" href="https://www.derstandard.at/story/2000119839723/energie-ungleichgewicht-wo-die-erde-die-ueberschuessige-waerme-aufnimmt">DerStandard</a>], [<a class="hip" href="https://www.pro-physik.de/nachrichten/hitzestau-der-atmosphaere">Pro-Physik</a>], [<a class="hip" href="https://meteoinfo.ru/novosti/99-pogoda-v-mire/17481-kuda-ukhodit-teplo">Hydrometcenter of Russia</a>]</p></li>
+          <ol reversed>
+            <li><p>von Schuckmann, K., Cheng, L., Palmer, M.D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., <strong>Cuesta-Valero, F.J.</strong>, Desbruy&egrave;res, D., Domingues, C., Garc&iacute;a-Garc&iacute;a, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G.C., Killick, R., King, B.A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D.P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S.I., Shepherd, A., Slater, D.A., Steiner, A.K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E. (2020). <a class="hip" href="https://essd.copernicus.org/articles/12/2013/2020/">Heat stored in the Earth system: where does the energy go?</a> <em>Earth System Science Data</em>, 12, 2013-2041, doi:10.5194/essd-12-2013-2020. <br><br> <u>Outreach</u>: [<a class="hip" href="https://www.lefigaro.fr/sciences/l-accumulation-de-chaleur-sur-terre-s-accelere-a-un-rythme-inquietant-20200910">Le Figaro</a>], [<a class="hip" href="http://www.columbia.edu/~jeh1/mailings/2020/20200907_Sentinel.pdf">James Hansen</a>], [<a class="hip" href="https://www.stfx.ca/about/news/stfx-climate-researchers-contribute-international-ground-breaking-climate-study-heat">StFX University</a>], [<a class="hip" href="https://marine.copernicus.eu/heat-stored-earth-system-energy-go/">Copernicus Marine Service</a>], [<a class="hip" href="https://news.uni-graz.at/en/detail/article/hitzestau/">University of Graz</a>], [<a class="hip" href="https://www.goosocean.org/index.php?option=com_content&view=article&id=250:heat-stored-in-the-earth-system-where-does-the-energy-go&catid=13&Itemid=247">The Global Ocean Observing System</a>], [<a class="hip" href="https://cleantechnica.com/2020/09/07/listen-up-dr-james-hansen-has-a-message-for-the-citizens-of-earth/">CleanTechnica</a>], [<a class="hip" href="https://www.wcrp-climate.org/news/science-highlights/1610-where-does-the-energy-go">Note of the WCRP</a>], [<a class="hip" href="https://public.wmo.int/en/media/news/where-does-heat-go">Note of the WMO</a>], [<a class="hip" href="https://www.preventionweb.net/news/view/73518">PreventionWeb</a>], [<a class="hip" href="https://idw-online.de/de/news753623">Informationsdienst Wissenschaft</a>], [<a class="hip" href="https://www.laborpraxis.vogel.de/die-welt-im-waermestau-a-962361/">LaborPraxis</a>], [<a class="hip" href="https://wissen.newzs.de/2020/09/07/hitzestau-forscherinnen-der-universitaet-graz-stellen-starke-globale-waermezunahme-in-der-atmosphaere-fest/">Wissen Newzs</a>], [<a class="hip" href="https://www.derstandard.at/story/2000119839723/energie-ungleichgewicht-wo-die-erde-die-ueberschuessige-waerme-aufnimmt">DerStandard</a>], [<a class="hip" href="https://www.pro-physik.de/nachrichten/hitzestau-der-atmosphaere">Pro-Physik</a>], [<a class="hip" href="https://meteoinfo.ru/novosti/99-pogoda-v-mire/17481-kuda-ukhodit-teplo">Hydrometcenter of Russia</a>]</p></li>
 
             <li><p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H., Zorita E. and Jaume-Santero F. (2019). <a class="hip" href="https://www.clim-past.net/15/1099/2019/cp-15-1099-2019.html">Long-term Surface Temperature (LoST) database as a complement for GCM preindustrial simulations</a>. <em>Climate of the Past</em>, 15, 1099-1111, doi:10.5194/cp-15-1099-2019.</p></li>
 
@@ -69,7 +74,7 @@
             <li><p> <strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H. and Smerdon J.E. (2016). <a class="hip" href="http://onlinelibrary.wiley.com/doi/10.1002/2016GL068496/full">First Assessment of Continental Energy Storage in CMIP5 Simulations</a>. <em>Geophysical Research Letters</em>, 43, doi:10.1002/2016GL068496.<br><br> <u>Outreach</u>: [<a class="hip" href="http://climate.stfx.ca/Canada_Research_Chair_in_Climate_Dynamics_News/May_2,_2016.html">Press Release</a>]</p></li>
 
             <li><p>Garc&iacute;a-Garc&iacute;a A., <strong>Cuesta-Valero F.J.</strong>, Beltrami H. and Smerdon J.E. (2016). <a class="hip" href="http://iopscience.iop.org/article/10.1088/1748-9326/11/4/044022/meta">Simulation of Air and Ground Temperatures in PIMIP3/CMIP5 Last Millennium Simulation: Implications for Climate Reconstructions from Borehole Temperature Profiles</a>. <em>Environmental Research Letters</em>, 11(4):044022, doi:10.1088/1748-9326/11/4/044022.<br><br> <u>Outreach</u>: [<a class="hip" href="http://climate.stfx.ca/Canada_Research_Chair_in_Climate_Dynamics_News/April_20,_2016.html">Press Release</a>]</p></li>
-          </ul>
+          </ol>
         </article>
 
         <article>
@@ -92,6 +97,8 @@
 
       </div>
 
+      </div>
+
       <div class="footnote">
         <p> This website has been edited with <a href="http://www.vim.org"> <img src="images/vim.png" alt="Vim" align="top" style=float:center;width:30px;height:auto /></a> and <a href="http://www.gimp.org"><img src="images/gimp.png" alt="Gimp" align="top" style=float:center;width:40px;height:auto /></a> </p>
         <p> Last modification: September, 2020 </p>
@@ -100,6 +107,22 @@
       </div>
 
     </div>
+
+    <!-- Sticky navbar -->
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navigation = document.getElementById("navigation");
+      var sticky = navigation.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navigation.classList.add("sticky")
+        } else {
+          navigation.classList.remove("sticky");
+        }
+      }
+    </script>
 
   </body>
 
