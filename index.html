@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="franstyle.css"/>
     <!-- Open hiperlinks in new browser tab -->
     <base target="_blank">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- LaTex in the webpage -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -30,6 +32,7 @@
 
       <div style="overflow:auto">
 
+
       <div id="navigation">
          <ul>
             <li> <a target="_self" class="active" href="index.html">Home</a> </li>
@@ -39,6 +42,22 @@
             <li> <a target="_self" href="conferences.html">Conferences</a> </li>
             <li class="social"> <a href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter"/></a> </li>
           </ul>
+      </div>
+
+
+      <div id="navmobile">
+        <a target="_self" href="index.html" class="active">Home</a>        
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <!-- <a href="index.html">Home</a> -->
+          <a target="_self" href="background.html">Background</a>
+          <a target="_self" href="research.html">Research</a>
+          <a target="_self" href="publications.html">Publications</a>
+          <a target="_self" href="conferences.html">Conferences</a>
+          <a class="social" href="https://twitter.com/fjcvag"><img src="images/twitter.png" alt="Twitter"/></a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" onclick="myFunction2()"><i class="fa fa-bars"></i> </a>
       </div>
 
 
@@ -115,7 +134,9 @@
       window.onscroll = function() {myFunction()};
       
       var navigation = document.getElementById("navigation");
+      var navmobile = document.getElementById("navmobile");
       var sticky = navigation.offsetTop;
+      var sticky2 = navmobile.offsetTop;
       
       function myFunction() {
         if (window.pageYOffset >= sticky) {
@@ -123,8 +144,25 @@
         } else {
           navigation.classList.remove("sticky");
         }
+        if (window.pageYOffset >= sticky2) {
+          navmobile.classList.add("sticky")
+        } else {
+          navmobile.classList.remove("sticky");
+        }
+      } 
+    </script>
+
+    <script>
+      function myFunction2() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
     </script>
+
 
   </body>
 
