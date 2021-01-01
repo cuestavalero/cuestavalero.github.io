@@ -16,7 +16,24 @@ p {
  
 a:link {
   text-decoration: none;
-  color: black;
+  color: rgb(0,0,0);
+  /*font-weight: bold; */
+}
+
+#relevant:link {
+  text-decoration: none;
+  color: rgb(150,0,0);
+  /*font-weight: bold; */
+}
+
+#relevant:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+#relevant:active {
+  text-decoration: underline;
+  color: red;
 }
 
 a:visited {
