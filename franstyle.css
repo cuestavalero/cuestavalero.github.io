@@ -13,7 +13,7 @@ p {
   font: 14px verdana, sans-serif;
   line-height: 70%;
 }
- 
+
 a:link {
   text-decoration: none;
   color: rgb(0,0,0);
@@ -113,7 +113,7 @@ h3 {
   display: block;
   float: right;
   padding: 0;
-  border: 0; 
+  border: 0;
 }
 #navigation .social img{
   padding: 0;
@@ -209,7 +209,7 @@ h3 {
   display: block;
   float: center;
   padding: 0;
-  border: 0; 
+  border: 0;
 }
 #navmobile .social img{
   padding: 0;
@@ -404,7 +404,7 @@ article {
 }
 
 body {
-  text-align: center; 
+  text-align: center;
 /*  background-image: url("images/background.png"), url("images/background-bottom.png"); */
 /*  background-image: url("images/background.png"); */
   background-repeat: repeat-x,repeat-x,repeat-y;
