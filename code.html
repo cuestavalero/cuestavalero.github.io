@@ -39,14 +39,14 @@
             <li> <a target="_self" href="research.html">Research</a> </li>
             <li> <a target="_self" href="publications.html">Publications</a> </li>
             <li> <a target="_self" href="conferences.html">Conferences</a> </li>
-            <li> <a target="_self" class="active" href="datasets.html">Datasets</a> </li>
-            <li> <a target="_self" href="code.html">Code</a> </li>
+            <li> <a target="_self" href="datasets.html">Datasets</a> </li>
+            <li> <a target="_self" class="active" href="code.html">Code</a> </li>
             <li class="social"> <a href="https://twitter.com/fjcuestavalero"><img src="images/twitter.png" alt="Twitter"/></a> </li>
           </ul>
       </div>
 
       <div id="navmobile">
-        <a target="_self" href="datasets.html" class="active">Datasets</a>
+        <a target="_self" href="code.html" class="active">Code</a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a target="_self" href="index.html">Home</a>
@@ -54,8 +54,8 @@
           <a target="_self" href="research.html">Research</a>
           <a target="_self" href="publications.html">Publications</a>
           <a target="_self" href="conferences.html">Conferences</a>
-          <!---<a href="datasets.html">Datasets</a>---!>
-          <a target="_self" href="code.html">Code</a>
+          <a href="datasets.html">Datasets</a>
+          <!---<a target="_self" href="code.html">Code</a>--->
           <a class="social" href="https://twitter.com/fjcuestavalero"><img src="images/twitter.png" alt="Twitter"/></a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -64,11 +64,11 @@
 
     <div class="main">
       <article>
-        <h1> Xibalb&aacute; Profiles </h1>
+        <h1> Codes for Inverting BOReholes (CIBOR) </h1>
 
           <div class="figure">
-          <a href="https://doi.org/10.5194/esd-12-581-2021">
-            <img src="images/xibalba_dataset.png" alt="xibalba" style="float:center;width:100%;height:auto"/>
+          <a href="https://github.com/cuestavalero/CIBOR">
+            <img src="images/cibor_code.png" alt="cibor" style="float:center;width:90%;height:auto"/>
           </a>
 
  <!--           <figcaption>
@@ -77,45 +77,15 @@
 -->
         </div>
 
-        <p>Dataset containing 1079 subsurface temperature-depth profiles measured around the world. Each log has been screened to eliminate those containing non-climatic artifacts. The subsurface temperature logs comprising this database are the result of the quality-control process explained in  Cuesta-Valero et al. (2021), including the following harmonization requeriments:</p>
-        <ul class="lista">
-          <li><p>Each log include at least one temperature record between 15 m and 100 m of depth.</p></li>
-          <li><p>Each log include at least one temperature record between 250 m and 310 m of depth.</p></li>
-          <li><p>Each log include at least three temperature records between 200 m and 300 m of depth.</p></li>
-          <li><p>All boreholes are truncated to include temperature records between 15 m and 300 m of depth.</p></li>
-        </ul>
+        <p>The Codes for Inverting BOReholes (CIBOR) are a collection of scripts to perform Singular Value Decomposition (SVD) inversions of subsurface temperature profiles with different strategies to aggregate results from any number of profiles.</p>
+
+        <p>All estimates retrieved by this suite solves the inversion problem: given the final measured subsurface temperature profile, CIBOR estimates the past changes in surface temperatures generating the observed profile. To this end, the code solves a system of equations using a Singular Value Decomposition (SVD) algorithm. Then, three different methods can be used to estimate uncertainties in the inversions and to aggregate results from different profiles to estimate regional and global means. Please, check Cuesta-Valero et al. (2022) for a detailed comparision of CIBOR methods.</p>
 
         <h3>Reference:</h3>
-        <p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H., Gonz&aacute;lez-Rouco J.F., and Garc&iacute;a-Bustamante E. (2021). <a id="relevant" href="https://cp.copernicus.org/articles/17/451/2021/cp-17-451-2021.html">Long-Term Global Ground Heat Flux and Continental Heat Storage from Geothermal Data</a>. <em>Clim. Past</em>, 17, 451-468, doi:10.5194/cp-17-451-2021. <a id="relevant" href="https://www.climate-of-the-past.net/articles_and_preprints/highlight_articles.html">Article highlighted by the editors of CP</a>.</p>
-      </article>
+        <p><strong>Cuesta-Valero, F. J.</strong>, Beltrami, H., Gruber, S., Garc&iacute;a-Garc&iacute;a, A., and Gonz&aacute;lez-Rouco, J. F. (2022). <a id="relevant" href="https://doi.org/10.5194/gmd-15-7913-2022">A new bootstrap technique to quantify uncertainty in estimates of ground surface temperature and ground heat flux histories from geothermal data</a>. <em>Geosci. Model Dev.</em>, 15, 7913-7932, doi:10.5194/gmd-15-7913-2022.</p>
 
-      <article>
-        <h1> Long-term Surface Temperature (LoST) Database</h1>
-
-          <div class="figure">
-          <a href="https://doi.org/10.6084/m9.figshare.8124887.v1">
-            <img src="images/lost_database.png" alt="xibalba" style="float:center;width:90%;height:auto"/>
-          </a>
-
- <!--           <figcaption>
-              Black: simulated ground surface temperature. Gray: simulated suarface air temperature. Red: temperature climatology from geothermal data. Blue: surface air temperature climatology estimated from geothermal data.
-            </figcaption>
--->
-        </div>
-
-        <p>Dataset containing long-term surface absolute temperatures for the period ~1300-1700 of the Comon Era (CE) over North America and some Caribbean islands. Long-term climatology estimates from 514 subsurface temperature profiles are retrieved and interpolated into a NetCDF file in order to facilitate its use and distribution.</p>
-        <p>All subsurface temperature-depth profiles were truncated to the depth range between 199 m and 300 m in order to retrieve estimates for the same temporal period according to the equation
-$$
-t \propto \frac{z^{2}}{4\cdot \kappa}
-$$
-where \(t\) is time since the surface signal happend, \(z\) is depth at which the signature of the surface perturbation is recorded, and \(\kappa\) is the thermal diffusivity of the ground.</p>
-        <p>A Gradient plus Inverse Distance Squared (GIDS) interpolation to a \(0.5^{\circ}\times 0.5^{\circ}\) grid was performed considering all 514 estimates from subsurface temperature profiles. Only grid cells within a radious of 650 km around a subsurface temperature profile were considered. This distance criterium was obtained from a pseudo-proxy experiment using five CMIP5 Past Millennium simulations, and consist in the maximum distance in which the RMSE between interpolated temperatures and the entire distribution of simulated temperatures in North America is smaller than \(1\ ^{\circ}C\) for all five models. Please, see the reference for more details.</p>
-
-        <h3>Reference:</h3>
-        <p><strong>Cuesta-Valero F.J.</strong>, Garc&iacute;a-Garc&iacute;a A., Beltrami H., Zorita E. and Jaume-Santero F. (2019). <a id="relevant" href="https://doi.org/10.5194/cp-15-1099-2019">Long-term Surface Temperature (LoST) database as a complement for GCM preindustrial simulations</a>. <em>Climate of the Past</em>, 15, 1099-1111, doi:10.5194/cp-15-1099-2019.</p>
-
-        <h3>Data:</h3>
-        <p><strong>Cuesta-Valero, F. J.</strong>, Garc&iacute;a-Garc&iacute;a, A., Beltrami, H., Zorita, E., Jaume-Santero, F. (2019). <a id="relevant" href="https://doi.org/10.6084/m9.figshare.8124887.v1">Long-term Surface Temperature (LoST) Database</a>. figshare. Dataset. https://doi.org/10.6084/m9.figshare.8124887.v1.</p>
+        <h3>Code:</h3>
+        <p><strong>Cuesta-Valero, F. J. </strong> (2022). <a id="relevant" href="https://github.com/cuestavalero/CIBOR">CIBOR: Codes for Inverting BOReholes (Version 1.0.0)</a> [Computer software]. https://github.com/cuestavalero/CIBOR.</p>
       </article>
 
       </div>
