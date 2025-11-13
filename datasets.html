@@ -54,7 +54,7 @@
           <a target="_self" href="research.html">Research</a>
           <a target="_self" href="publications.html">Publications</a>
           <a target="_self" href="conferences.html">Conferences</a>
-          <!---<a href="datasets.html">Datasets</a>---!>
+          <!---<a href="datasets.html">Datasets</a>--->
           <a target="_self" href="code.html">Code</a>
           <a class="social" href="https://twitter.com/fjcuestavalero"><img src="images/twitter.png" alt="Twitter"/></a>
         </div>
@@ -63,6 +63,39 @@
       </div>
 
     <div class="main">
+      <article>
+        <h1> Ground heat storage from satellite and geothermal data </h1>
+          <div class="figure">
+          <a href="https://doi.org/10.5281/zenodo.17339736">
+            <img src="images/dataset_ghs_rs_bore.png" alt="ghs_rs_bore" style="float:center;width:100%;height:auto"/>
+          </a>
+
+ <!--           <figcaption>
+              Black: simulated ground surface temperature. Gray: simulated suarface air temperature. Red: temperature climatology from geothermal data. Blue: surface air temperature climatology estimated from geothermal data.
+            </figcaption>
+-->
+        </div>
+
+        <p>This dataset provides unified estimates of Global Ground Heat Storage (GHS) since 1960 by combining low-frequency geothermal measurements with annual-resolution satellite products. This unique combination spans the period 1960-2020, effectively bridging the data gap that previously existed in geothermal records after the year 2000.</p>
+
+        <p>The geothermal GHS estimates are the same as those published in Cuesta-Valero et al. (2022). These values were derived from the inversion of 1079 subsurface temperature profiles taken from the Xibalb&agrave; database. The satellite GHS estimates were retrieved using land surface temperatures and land cover type data provided by the ESA-CCI project, and the retrieval process also incorporated data from the ERA5-Land reanalysis.</p>
+
+        <p>Due to the inherent difference in temporal resolution and reference period between the geothermal and satellite data sources, two distinct methods were employed to reconcile the estimates:</p>
+        <ul class="lista">
+          <li><p>A physics-based method grounded in the principles of heat diffusion through the ground.</p></li>
+          <li><p>A statistical method based on adjusting the mean of the satellite time series.</p></li>
+        </ul>
+
+        <p>The final dataset includes the GHS derived from both reconciliation methods, alongside a single combined average of the two estimates.</p>
+
+        <h3>Reference:</h3>
+        <p><strong>Cuesta-Valero, F. J.</strong>, Garc&iacute;a-Garc&iacute;a, A., Beltrami, H., Garc&iacute;-Pereira, F., Gonz&aacute;lez-Rouco, J. F., and Peng, J.(2025). <a id="relevant" href="https://doi.org/10.1126/sciadv.adw9958">Robust increase in observed heat storage by the global subsurface</a>. <em>Science Advances</em>, https://doi.org/10.1126/sciadv.adw9958.</p>
+
+        <h3>Data:</h3>
+        <p><strong>Cuesta-Valero, F. J.</strong> (2025). <a id="relevant" href="https://doi.org/10.5281/zenodo.17339736">Robust increase in observed heat storage by the global subsurface: Ground heat storage estimates</a> (1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17339736.</p>
+
+      </article>
+
       <article>
         <h1> Continental Heat Storage and Ground Heat Storage </h1>
           <div class="figure">
@@ -78,13 +111,13 @@
 
         <p>This dataset contains an updated estimate of the global continental heat storage for the period 1960-2020. For the first time, the continental heat storage is assessed as composed by: ground heat storage due to changes in subsurface temperatures, inland water heat storage due to the warming of inland water bodies, and permafrost heat storage due to thawing of ground ice in the Arctic.<p>
 
-        <p>Additionally, the datasset includes the global ground heat storage for the period 1960-2020. The ground heat storage has been estimated by inverting 1079 subsurface temperature profiles form the Xibalb&aacute; database (see below in this webpage) and a bootstrap technique to aggregate the Singular Value Decomposition (SVD) inversions of each profile (see the <a id="relevant" href="research.html">Research</a> section in this webpage).</p>
+        <p>Additionally, the dataset includes the global ground heat storage for the period 1960-2020. The ground heat storage has been estimated by inverting 1079 subsurface temperature profiles form the Xibalb&aacute; database (see below in this webpage) and a bootstrap technique to aggregate the Singular Value Decomposition (SVD) inversions of each profile (see the <a id="relevant" href="research.html">Research</a> section in this webpage).</p>
 
         <p>Currently, the dataset is in its second version, which includes an update of continental heat content uncertainty, where the standard deviation has been corrected from the precedent version to consider properly the value from permafrost heat storage uncertainty.</p>
 
 
         <h3>Reference:</h3>
-        <p>von Schuckmann, K., Min&egrave;re, A., Gues, F., <strong>Cuesta-Valero, F. J.</strong>, Kirchengast, G., Adusumilli, S., Straneo, F., Allan, R., Barker, P. M., Beltrami, H., Boyer, T., Cheng, L., Church, J., Desbruyeres, D., Dolman, H., Domingues, C. M., Garc&iacute;a-Garc&iacute;a, A., Giglio, D., Gilson, J. E., Gorfer, M., Haimberger, L., Hendricks, S., Hosoda, S., Johnson, G. C., Killick, R., King, B., Kolodziejczyk, N., Korosov, A., Krinner, G., Kuusela, M., Langer, M., Lavergne, T., Lawrence, I., Li, Y., Lyman, J., Marzeion, B., Mayer, M., MacDougall, A. H., McDougall, T., Monselesan, D. P., Nitzbon, J., Otosaka, I., Peng, J., Purkey, S., Roemmich, D., Sato, K., Sato, K., Savita, A., Schweiger, A., Shepherd, A., Seneviratne, S. I., Simons, L., Slater, D. A., Slater, T., Smith, N., Steiner, A., Suga, T., Szekely, T., Thiery, W., Timmermans, M.-L., Vanderkelen, I., Wjiffels, S. E., Wu, T., and Zemp, M. (2023). <a id="relevant" href="https://doi.org/10.5194/essd-2022-239">Heat stored in the Earth system 1960-2020: Where does the energy go?</a> <em>Earth Syst. Sci. Data Discuss.</em>, [preprint], <u>accepted</u>.</p>
+        <p>von Schuckmann, K., Mini&egrave;re, A., Gues, F., <strong>Cuesta-Valero, F. J.</strong>, Kirchengast, G., Adusumilli, S., Straneo, F., Ablain, M., Allan, R. P., Barker, P. M., Beltrami, H., Blazquez, A., Boyer, T., Cheng, L., Church, J., Desbruyeres, D., Dolman, H., Domingues, C. M., Garc&iacute;a-Garc&iacute;a, A., Giglio, D., Gilson, J. E., Gorfer, M., Haimberger, L., Hakuba, M. Z., Hendricks, S., Hosoda, S., Johnson, G. C., Killick, R., King, B., Kolodziejczyk, N., Korosov, A., Krinner, G., Kuusela, M., Landerer, F. W., Langer, M., Lavergne, T., Lawrence, I., Li, Y., Lyman, J., Marti, F., Marzeion, B., Mayer, M., MacDougall, A. H., McDougall, T., Monselesan, D. P., Nitzbon, J., Otosaka, I., Peng, J., Purkey, S., Roemmich, D., Sato, K., Sato, K., Savita, A., Schweiger, A., Shepherd, A., Seneviratne, S. I., Simons, L., Slater, D. A., Slater, T., Steiner, A. K., Suga, T., Szekely, T., Thiery, W., Timmermans, M.-L., Vanderkelen, I., Wjiffels, S. E., Wu, T., and Zemp, M. (2023). <a id="relevant" href="https://doi.org/10.5194/essd-15-1675-2023">Heat stored in the Earth system 1960-2020: where does the energy go?</a> <em>Earth Syst. Sci. Data</em>, 15, 1675-1709, https://doi.org/10.5194/essd-15-1675-2023.</p>
 
         <h3>Data:</h3>
         <p><strong>Cuesta-Valero, F.J.</strong>, Beltrami, H., Garc&iacute;a-Garc&iacute;a, A., Krinner, G., Langer, M., MacDougall, A., Nitzbon, J, Peng, J., von Schuckmann, K., Seneviratne, S.I., Thiery, W., Vanderkelen, I., Wu, T. (2023). <a id="relevant" href="https://doi.org/10.26050/WDCC/GCOS_EHI_1960-2020_CoHC_v2">GCOS EHI 1960-2020 Continental Heat Content (Version 2)</a>. World Data Center for Climate (WDCC) at DKRZ. https://doi.org/10.26050/WDCC/GCOS_EHI_1960-2020_CoHC_v2.</p>
