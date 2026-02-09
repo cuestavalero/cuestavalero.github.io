@@ -64,6 +64,43 @@
 
     <div class="main">
       <article>
+        <h1> Global estimates of ground surface temperature from borehole inversions </h1>
+
+          <div class="figure">
+          <a href="https://doi.org/10.5281/zenodo.18547905">
+            <img src="images/paper_bti_stp.png" alt="Bootstrapping_STP" style="float:center;width:100%;height:auto"/>
+          </a>
+
+ <!--           <figcaption>
+              Black: simulated ground surface temperature. Gray: simulated suarface air temperature. Red: temperature climatology from geothermal data. Blue: surface air temperature climatology estimated from geothermal data.
+            </figcaption>
+-->
+        </div>
+
+        <p>This dataset includes global estimates of ground surface temperature for the period 1465-2000 C.E. The time series were created using the profiles available in the Xibalb&agrave; dataset and three different methods to estimate the global averages and uncertainties. The values were retrieved and analyzed with the CIBOR software.<p>
+
+        <p>The datasets in this repository were created by applying three different methods to estimate global means and uncertainties:<p>
+        <ul class="lista">
+          <li><p>The results of a typical Singular Value Decomposition (SVD) analysis based on Beltrami et al. (1992) are provided in the file `singular_value_decomposition.csv`.</p></li>
+          <li><p>The results of a perturbed parameter analysis of the thermal properties of the ground are provided in the file `perturbed_parameter_ensemble.csv`.</p></li>
+          <li><p>The results of a bootstraping estimate from a Monte-Carlo ensemble of inversions are provided in the file `bootstrapping.csv`.</p></li>
+        </ul>
+
+        <p><strong>IMPORTANT</strong>: we recommend using the results of the file `bootstrapping.csv`. The other two files are provided for comparison purposes, but the results of the bootstraping technique are more robust.<p>
+
+        <p>All inversions were performed retaining the two largest eigenvalues in the SVD algorithm and considering a step change of 30 years in the retrieved surface signal. Inversions in the `singular_value_decomposition.csv` file consider a constant thermal diffusivity of \(\mathrm{1.0\times 10^{-6}\ m^{2}\, s^{-1}}\), while the other two files consider a range of diffusivities between \(\mathrm{0.5\times 10^{-6}}\) and \(\mathrm{1.5\times 10^{-6}\ m^{2}\, s^{-1}}\). The `perturbed_parameter_ensemble.csv` file considers an ensemble of 100 members, while the `bootstrapping.csv` file considers a Monte-Carlo ensemble of 1000 members.<p>
+
+        <h3>Reference:</h3>
+        <p><strong>Cuesta-Valero, F. J.</strong>, Beltrami, H., Gruber, S., Garc&iacute;a-Garc&iacute;a, A., and Gonz&aacute;lez-Rouco, J. F. (2022). <a id="relevant" href="https://doi.org/10.5194/gmd-15-7913-2022">A new bootstrap technique to quantify uncertainty in estimates of ground surface temperature and ground heat flux histories from geothermal data</a>. <em>Geosci. Model Dev.</em>, 15, 7913-7932, doi:10.5194/gmd-15-7913-2022.</p>
+
+        <h3>Code:</h3>
+        <p><strong>Cuesta-Valero, F. J. </strong> (2022). <a id="relevant" href="https://github.com/cuestavalero/CIBOR">CIBOR: Codes for Inverting BOReholes (Version 1.0.0)</a>. [Computer software]. https://doi.org/10.5281/zenodo.7017521.</p>
+
+        <h3>Data:</h3>
+        <p><strong>Cuesta-Valero, F. J.</strong> (2026). <a id="relevant" href="https://doi.org/10.5281/zenodo.18547905">A new bootstrap technique to quantify uncertainty in estimates of ground surface temperature and ground heat flux histories from geothermal data: global borehole inversions</a>. [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18547905.</p>
+      </article>
+
+      <article>
         <h1> Ground heat storage from satellite and geothermal data </h1>
           <div class="figure">
           <a href="https://doi.org/10.5281/zenodo.17339736">
